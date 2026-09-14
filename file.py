@@ -94,6 +94,21 @@ while end_games!=True:
         end_games = True
         print("You lose!")
     print(" ".join(blank))
+    print(hangman_stages[lives])
     if "_" not in blank:
         end_games = True
         print("You win!")
+    if end_games:
+        ask = input("Do you want to play again? (Y/N)")
+        if ask == "Y":
+            secret = random.choice(word)
+            blank.clear()
+            longity = len(secret)
+            for space in range(longity):
+                blank.append("_")
+            end_games = False
+            guessed.clear()
+            lives = 9
+        else:
+            print("Thanks for playing, see you in the next round..")
+
