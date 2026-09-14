@@ -65,7 +65,13 @@ hangman_stages = ['''
 
 
 import random
-word = ["UDEMY","LOVER"]
+word = ["Absolute", "Building", "Creative", "Dynamite", "Elephant", "Balance", 
+        "Curious", "Journey", "Pioneer", "Vibrant", "Canvas", "Design", "Energy", "Moment", 
+        "Wisdom", "Brave", "Focus", "Light", "Peace", "Voice","Adventure", "Brilliant", "Discovery", 
+        "Freedom", "Harmony", "Invention", "Jubilant", "Knowledge", "Labyrinth", "Mountain", "Navigator", 
+        "Optimism", "Pinnacle", "Resilient", "Starlight", "Triumph", "Universe", "Valiant", "Whisper", 
+        "Zenith", "Breeze", "Canyon", "Dolphin", "Emerald", "Falcon", "Glacier", "Horizon", "Island", "Jungle", 
+        "Kettle", "Lagoon", "Meadow", "Nebula", "Oasis", "Planet", "Quartz", "River", "Summit", "Thunder", "Valley"]
 secret = random.choice(word)
 longity = len(secret)
 blank = []
